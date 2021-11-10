@@ -1,1 +1,5 @@
-# JetSoftPro_project_Sakho
+- Knowledge of HTML, CSS, JavaScript
+- Experience with Node.js
+- Experience with HTML and CSS preprocessors (Pug, Sass)
+- Experience with adaptive and crossbrowser layout
+- Experience using Git 
