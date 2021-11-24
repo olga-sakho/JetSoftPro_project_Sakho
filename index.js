@@ -1,19 +1,17 @@
 // 1. Compute the exponent of a number (using recursion);
 //8^2 = 8 x 8 = 64
 
-// let exponent = function(base, power) 
-// {
-//    if (power === 0) 
-//    {
-//     return 1;
+// let exponent = function(base, power){
+//     if (power === 0){
+//         return 1;
+//     }else if(power < 0){
+//         return exponent(base, power+1)/base;
+//     }else{
+//         return base * exponent(base, power-1);
 //     }
-//   else 
-//   {
-//     return base * exponent(base, power-1);
-//   }
 // };
 
-// console.log(exponent(8, 2));
+//  console.log(exponent(8, 2));
 
 // 2. Write functions min and max that will find min and max number in array using apply
 
@@ -37,8 +35,8 @@
 
 // function displayCarDetails(ownerName) {
 //    console.log(
-//         `${ownerName} ${this.registrationNumber}  ${this.branch}  ${this.color}`
-//       );
+//         `${ownerName} has a ${this.color} ${this.branch} car, registration number of the car: ${this.registrationNumber}`
+//    );
 // }
 //     const car1 = { registrationNumber: "KA3452OP", branch: "KIA", color: "red"};
 //     const car2 = { registrationNumber: "AI9874MK", branch: "BMW", color: "white"};
@@ -57,14 +55,30 @@
 //     } else {
 //       return 'hey arnold'
 //     }
-//   }
+// }
 //   const amy = {name: 'amy'}
 //   console.log(greet(amy))
 
 // 5.We want this code to log out the numbers 0, 1, 2, 3 in that order,
 // but it doesn’t do what we expect - fix that(find two solutions)
 
+
 // for (var i = 0; i < 4; i++) {
 //   setTimeout(() => console.log(i), 0)
 // }
   
+//decision_1
+
+// for (let i = 0; i < 4; i++) {
+//     setTimeout(() => console.log(i), 0)
+// }
+
+//decision_2
+
+// for (var i = 0; i < 4; i++) {
+//     setTimeout(function(i) {
+//       return function() {
+//         console.log(i);
+//       }
+//     }(i), 0);
+// }
